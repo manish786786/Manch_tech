@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manch Technology</title>
+    <link rel="stylesheet" href="../vendors/css/Grid.css">
+    <link rel="stylesheet" href="../vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav>
+            <div class="row-grid">
+                <img src="../asset/logo.png" alt="logo" class="logo">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Partner</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-plus-square" style="font-size: 30px;color: white;"></i></a>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>"If you are not willing to risk the usual,<br> you will have to settle for the ordinary"</h1>
+            <br>
+            <h2>- Jim Rohn</h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="row-grid">
+            <div class="col span-1-of-5 "><a href="../form/form.html"><button type="button" class="btn btn-default btn-lg btn-block">Add</button></a>
+            </div>
+            <div class="col span-1-of-5 "></div>
+            <div class="col span-1-of-5 "></div>
+            <div class="col span-1-of-5 "><button type="button" class="btn btn-info btn-lg btn-block" onclick="sort()">Sort</button>
+            </div>
+            <div class="col span-1-of-5 "> <input type="text" class="form-control" id="search"></div>
+        </div>
+        <div class="container">
+            <table class="table table-bordered table-color">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>userId</th>
+                        <th>title</th>
+                        <th>body</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody  id="list">
+                </tbody>
+            </table>
+        </div>
+        <div class="row-grid">
+            <ul class="pagination-section">
+                <li ><button type="button" class="btn btn-info btn-xs" onclick="previous()">previous</button></li>
+                <li ><button type="button" class="btn btn-info btn-xs" onclick="next()">next</button></li>
+            </ul> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="row-grid">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#"> About us</a></li>
+                    <li><a href="#"> Blog</a></li>
+                    <li><a href="#"> Product</a></li>
+                    <li><a href="#"> iOS App</a></li>
+                    <li><a href="#"> Android App</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-grid">
+            <p>No copyrights here. Copyright © 2020 manch technology</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

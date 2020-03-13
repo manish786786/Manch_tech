@@ -1,0 +1,181 @@
+
+/*---------------------------------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container-fluid{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+/* mobile nav */
+
+.mobile-nav-icon{
+    display: none;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+html{
+    background-color: white;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/*-----------------------------------------------------------------*/
+/* HEADER */
+/*-----------------------------------------------------------------*/
+
+
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgb(0, 0, 0,0.7)),to(rgb(0, 0, 0,0.7))) ,url(../asset/norton-shake.jpg);
+    background-image:linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)) ,url(../asset/norton-shake.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+
+.logo {
+    width: auto;
+    height: 56px;
+    float: left;
+    margin-top: 20px;
+}
+
+.hero-text-box{
+    text-align: center;
+    color: white;
+    width: 1140px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+
+.main-nav{
+    float: right;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    letter-spacing: 2px;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #a15512;
+}
+
+
+.row-grid{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+
+}
+
+section{
+    margin : 30px 0;
+    background-color: #80808057;
+}
+
+.row-grid .span-1-of-5 .form-control{
+    height: 45px;
+}
+
+.table-color{
+    background-color: white;
+}
+
+
+.pagination-section{
+    float: right;
+    list-style: none;
+}
+
+.pagination-section li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+
+/*---------------------------------------------------------------*/
+/* FOOTER */
+/*---------------------------------------------------------------*/
+
+footer{
+    background-color: rgba(62, 61, 59, 0.86);
+    padding: 60px 0;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-nav li:last-child{
+    margin-right: 0;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: rgb(172, 156, 156);
+    font-size: 16px;
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:white;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    font-size: 16px;
+}
+
+footer p{
+    color: rgb(172, 156, 156);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
