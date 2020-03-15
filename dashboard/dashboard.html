@@ -26,7 +26,8 @@
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Partner</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-plus-square" style="font-size: 30px;color: white;"></i></a>
+                <a class="mobile-nav-icon js--nav-icon"><i class="fa fa-plus-square"
+                        style="font-size: 30px;color: white;"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
@@ -38,16 +39,18 @@
 
     <section>
         <div class="row-grid">
-            <div class="col span-1-of-5 "><a href="../form/form.html"><button type="button" class="btn btn-default btn-lg btn-block">Add</button></a>
+            <div class="col span-1-of-5 "><a href="../form/form.html"><button type="button"
+                        class="btn btn-default btn-lg btn-block">Add</button></a>
             </div>
             <div class="col span-1-of-5 "></div>
             <div class="col span-1-of-5 "></div>
-            <div class="col span-1-of-5 "><button type="button" class="btn btn-info btn-lg btn-block" onclick="sort()">Sort</button>
+            <div class="col span-1-of-5 "><button type="button" class="btn btn-info btn-lg btn-block"
+                    onclick="sort()">Sort</button>
             </div>
             <div class="col span-1-of-5 "> <input type="text" class="form-control" id="search"></div>
         </div>
         <div class="container">
-            <table class="table table-bordered table-color">
+            <table class="table table-bordered table-color" id="myTable">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -57,15 +60,16 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody  id="list">
+                <tbody id="list">
                 </tbody>
             </table>
         </div>
         <div class="row-grid">
             <ul class="pagination-section">
-                <li ><button type="button" class="btn btn-info btn-xs" onclick="previous()">previous</button></li>
-                <li ><button type="button" class="btn btn-info btn-xs" onclick="next()">next</button></li>
-            </ul> 
+                <li><button type="button" class="btn btn-info btn-xs" id="prev" onclick="previous()">previous</button>
+                </li>
+                <li><button type="button" class="btn btn-info btn-xs" id="next" onclick="next()">next</button></li>
+            </ul>
         </div>
     </section>
 

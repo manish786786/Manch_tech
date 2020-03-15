@@ -17,15 +17,16 @@ $(document).ready(function () {
         localStorage.removeItem("row");
     }else{
         let id = Math.round(Math.random() * 10000)
-        document.getElementById("id").value = id
+        document.getElementById("userId").value = id
     }
 })
 
 // add entry
 function add() {
 
-    let id = document.getElementById("id").value
+   
     let userID = document.getElementById("userId").value
+    let id = document.getElementById("id").value
     let title = document.getElementById("title").value
     let body = document.getElementById("body").value
 
@@ -38,8 +39,8 @@ function add() {
         }
 
         let obj = {
-            "id": id,
-            "userId": userID,
+            "userId": JSON.parse(userID),
+            "id": JSON.parse(id),
             "title": title,
             "body": body
         }
@@ -49,8 +50,8 @@ function add() {
         ckeck == false
     } else {
         let obj = {
-            "id": id,
-            "userId": userID,
+            "userId": JSON.parse(userID),
+            "id": JSON.parse(id),
             "title": title,
             "body": body
         }
